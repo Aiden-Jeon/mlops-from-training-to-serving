@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  minio-server:
+    image: minio/minio
+    ports:
+      - 9000:9000
+      - 9001:9001
+    environment:
+      MINIO_ROOT_USER: minio
+      MINIO_ROOT_PASSWORD: miniostorage
+    command: server /data/minio --console-address :9001

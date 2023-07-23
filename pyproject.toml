@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "intermediate"
+version = "0.1.0"
+description = "intermediate code repository"
+authors = ["Aiden-Jeon <aiden.jongseob@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.9.*"
+pandas = "^2.0.2"
+scikit-learn = "^1.2.2"
+mlflow = "^2.3.2"
+optuna = "^3.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
