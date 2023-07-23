@@ -1,4 +1,5 @@
 import os
+
 import mlflow
 
 os.environ["MLFLOW_S3_ENDPOINT_URL"] = "http://0.0.0.0:9000"
@@ -15,7 +16,7 @@ if __name__ == "__main__":
     from argparse import ArgumentParser
 
     parser = ArgumentParser()
-    parser.add_argument("--rudpn-id", type=str)
+    parser.add_argument("--run-id", type=str)
     parser.add_argument("--model-name", type=str, default="my_model")
     args = parser.parse_args()
 
